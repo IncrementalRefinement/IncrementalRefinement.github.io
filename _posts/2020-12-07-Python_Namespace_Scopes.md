@@ -1,3 +1,13 @@
+---
+layout: post
+title: Python 命名空间
+tags: [Python]
+---
+
+一点关于 Python 中命名空间的理解
+
+## Python Namespace
+
 Python的namespaces和Scope resolution遵循LEGB (Local -> Enclosed -> Global -> Built-in) 规则, 逐层向外寻找
 
 ```

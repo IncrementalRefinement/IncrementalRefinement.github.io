@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Spring 容器浅析
-categories: [Spring]
 tags: [Spring, SourceCode Reading]
 ---
 

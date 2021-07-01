@@ -63,13 +63,4 @@ MIMO (Multiple Instruction Multiple Data) 有两种情况:
 1. Atomic swap of register ↔ memory−Pair of instructions for “linked” read and write▪write fails if memory location has been “tampered” with after linked read (没有涉及)
 2. 引入原子操作的概念, 对锁的读写操作只需一条指令, 这一条指令在运行的时候绝对不会被其他线程的其他指令干扰(因为同时只涉及一个核)
 
-
-
-ps : OpenMP库留待之后做lab的时候熟悉, Thread对于Cache的影响等 
-
-
-
-
-
-
-
+ps : OpenMP库留待之后做lab的时候熟悉, Thread对于Cache的影响等
