@@ -30,7 +30,7 @@ SIMD(Single Instruction Multiple Data) 对多个数据同时执行同一个数�
 
 ### 定义
 
-就我的理解来看 
+就我的理解来看
 
 MIMO (Multiple Instruction Multiple Data) 有两种情况:
 
