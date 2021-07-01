@@ -14,16 +14,16 @@ defaults:
     scope:
       path: "" # empty string for all files
     values:
-      title: dbyll
+      title: Whatever
 
 description: Keep tracking random thoughts here
 author:
   name: ltakamori
   email: fluent_python@qq.com
-  github: ltaka
-  twitter: nope
-  pinterest: nope
-  linkedin: nope
+  github: ltakamori
+  # twitter: nope
+  # pinterest: nope
+  # linkedin: nope
   bio: The world will little note, nor long remember
   email_md5: 726351295ec82e145928582f595aa3aa
 
