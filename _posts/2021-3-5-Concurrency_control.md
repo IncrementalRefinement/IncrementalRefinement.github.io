@@ -1,4 +1,10 @@
-# <center>Concurrency Control</center>
+---
+layout: post
+title: Concurrency Control
+tags: [Concurrency, Os, Thoughts]
+---
+
+关于操作系统中 Cuncurrency Control 的一些学习笔记
 
 ## Basic Conceps
 

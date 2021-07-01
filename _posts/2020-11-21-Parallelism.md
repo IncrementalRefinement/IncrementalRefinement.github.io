@@ -1,4 +1,10 @@
-# Parallelism
+---
+layout: post
+title: Parallesim 初学笔记
+tags: [Parallelism, CS61C]
+---
+
+CS61C 初学笔记
 
 ## 引入Parallelism的原因&简介
 
