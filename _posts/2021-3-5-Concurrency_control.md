@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Concurrency Control
-tags: [Concurrency, Os, Thoughts]
+tags: [Concurrency, OS, Thoughts]
 ---
 
 关于操作系统中 Cuncurrency Control 的一些学习笔记
