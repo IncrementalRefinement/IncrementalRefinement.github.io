@@ -1,6 +1,9 @@
-# Spring 容器浅析
-
-## 写在前面
+---
+layout: post
+title: Spring 容器浅析
+categories: [Spring]
+tags: [Spring, SourceCode Reading]
+---
 
 本文选取 ClassPathXmlApplicationContext 作为例子并结合一定量源码(5.3.7)讲解 Spring 容器的一系列相关概念（容器初始化、IoC、DI等）,我目前只看了个囫囵，先记录一下当下的理解，留待以后纠正。
 
