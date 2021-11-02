@@ -6,7 +6,7 @@ tags: [Methodology, Time Management]
 
 This blog is mainly for summarize my understanding of the book **soft skills the software developer's life manual**. I haven't finished reading all the chapters, so i left them with mark TODO
 
-I try to write this blog in English, but ** found myself terribly naive about that currently. I might get some more exercise and do more reading XD
+I try to write this blog in English, but found myself terribly naive about that currently. I might get some more exercise and do more reading XD
 
 ## Section1 Career
 
