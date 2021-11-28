@@ -18,20 +18,24 @@ The typical situation is as follows:  Users specify a map function that processe
 
 ## 2. Implementation
 
-The architecture has some concepts:
+I think it would be helpful to have a basic awareness of the concept of task and participants before understanding the overall architecture. 
 
 ### 2.1 Tasks
 
 As we indicated in the overview section, the idea of MapReduce is similar to the idea dive-and-conquer. The task here can be generalize into two kinds:
 
 1. Map, which is done before Reduce. Before mapping, the input data were firstly partitioned into unrelated parts and thus can be processing in parallel and generate the intermediate K-V pairs for the reduce task.
-2. The worker of the Reduce task will take in the intermediate K-Vs
-// TODO: here
+2. The worker of the Reduce task will take in the intermediate K-Vs generated before and output the final result of this MapReduce procedure. The output result could be used as the input for another round of MapReduce
+*  The input keys and values are drawn from a different domain than the output keys and values. Furthermore, the intermediate keys and values are from the same domain as the output keys and values.
 
 ### 2.2 Participants
 
+1. Master: the master dominates the functioning of the distributed system, including work scheduling, failure detection......Take it as the administrator and supervisor.
+2. Worker: perform the work of map&reduce
+
 ### 2.3 The Overall Architecture
 
+Google presented the straightforward and elegant architecture they accomplished in the paper. In this architecture, Master is responsible for the well-functioning of the whole system and has an overall point of view of the whole system. The worker takes their computational responsibility under the command of master and only have limited information from their perspective. The master is thus becomes the single point of the system and the mechanism within should be well designed. Also, the google introduced many design points to make the system having better performance, being more fault-tolerant by keeping some degree of redundancy intentionally and utilizing the locality of information storage and processing.
 
 ## 3. Refinements
 
@@ -48,3 +52,4 @@ The paper is written in 2004, at tha time, google has adopted the idea of MapRed
 
 ## 4. My Random Thoughts
 
+One interesting point of the MapReduce framework is that it hides the complexity of managing a distributed system away from the programmer who used it to processing data. By doing that, the freedom is somewhat deprived because of the restriction on the program model, but the work is also simplify and the project can be more efficient delivered. The framework is some kind of low-code attemption, and i think the degree of low-coding should be considered carefully to achieve the equilibrium between freedom and simplicity.
