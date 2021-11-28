@@ -51,6 +51,6 @@ The refinement of the implementation can be found on the paper and many other ma
 
 The paper is written in 2004. At tha time, google has adopted the idea of MapReduce and widely made use of it in many circumstances such as machine learning, large scale computation and so on, in replace of the traditional ar-hoc way. The framework works pretty well and make many project more efficient and easy to maintained than the previous approach of the ad-hoc distributed passes in the prior version. Looking backward at the end of 2021, the MapReduce has promoted the development of big data processing, and inspired many distributed computation framework.
 
-## 4. My Random Thoughts
+## 5. My Random Thoughts
 
 One interesting point of the MapReduce framework is that it hides the complexity of managing a distributed system away from the programmer who used it to processing data. By doing that, the freedom is somewhat deprived because of the restriction on the program model, but the work is also simplify and the project can be more efficiently delivered. The framework is some kind of low-code attemption, and i think the degree of low-coding should be considered carefully to achieve the best equilibrium between freedom and simplicity.
