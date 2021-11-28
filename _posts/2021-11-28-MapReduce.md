@@ -10,7 +10,7 @@ This notes is written after I read the classic paper---"MapReduce: Simplified Da
 
 I think the term MapReduce can refer to multiple concepts:
 
-1. The idea of processing a large amount data in a dive-and-conquer-like way in parallel
+1. The idea of processing a large amount data in a divide-and-conquer-like way in parallel
 2. The distributed system that is capable of performing the idea in a hardware level(cluster of commodity machines)
 3. The software framework the hide the complexity of managing the distributed system and let the programmer program in a rather easy way.
 
@@ -22,7 +22,7 @@ I think it would be helpful to have a basic awareness of the concept of Task and
 
 ### 2.1 Tasks
 
-As we indicated in the previous section, the idea of MapReduce is similar to the idea dive-and-conquer in algorithm design. The task here can be generalize into two kinds:
+As we indicated in the previous section, the idea of MapReduce is similar to the idea divide-and-conquer in algorithm design. The task here can be generalize into two kinds:
 
 1. Map, which is done before Reduce. Before mapping, the input data were firstly partitioned into unrelated parts and thus can be processing in parallel and generate the intermediate K-V pairs for the reduce task.
 2. The worker of the Reduce task will take in the intermediate K-Vs generated before and output the final result of this MapReduce procedure. The output result could be used as the input for another round of MapReduce
